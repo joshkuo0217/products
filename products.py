@@ -12,3 +12,7 @@ while True:
 print(products)
 
 #若print(products[0][0]) = 印出大清單第零格裡面的小清單的第零格儲存格印出來
+
+for p in products:
+	print(p) #印出清單中的每一個小東西
+	print(p[0], '的價格', p[1])
