@@ -16,3 +16,7 @@ print(products)
 for p in products:
 	print(p) #印出清單中的每一個小東西
 	print(p[0], '的價格', p[1])
+
+with open('products.csv', 'w') as f: #寫入檔案!!!
+	for p in products:
+		f.write(p[0] + ',' + p[1] + '\n')
