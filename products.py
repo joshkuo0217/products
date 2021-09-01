@@ -18,6 +18,7 @@ for p in products:
 	print(p) #印出清單中的每一個小東西
 	print(p[0], '的價格', p[1]) #印出每一個小清單的第0格 & 第1格
 
-with open('products.csv', 'w') as f: #寫入檔案!!!
+with open('products.csv', 'w', encoding ='utf-8' ) as f: #寫入檔案!!!
+	f.write('Products, Price\n') #adding columns & rectify Grabled
 	for p in products:
 		f.write(p[0] + ',' + str(p[1]) + '\n')
